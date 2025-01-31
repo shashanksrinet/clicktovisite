@@ -1,7 +1,7 @@
 		<!-- Navbar -->
 		<nav class="navbar navbar-expand-lg py-3 navbar-default">
 			<div class="container px-0">
-				<a class="navbar-brand" href="{{ route('home') }}"><img width="150px" height="40px" src="{{ asset('storage/' . $headerlogo->img_path) }}" alt="" /></a>
+				<a class="navbar-brand" href="{{ route('home') }}"><img height="65px" src="{{ asset('storage/' . $headerlogo->img_path) }}" alt="" /></a>
 				<!-- Button -->
 				<button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="icon-bar top-bar mt-0"></span>
