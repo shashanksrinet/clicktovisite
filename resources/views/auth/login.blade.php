@@ -1,0 +1,60 @@
+@extends('layouts.app')
+
+@section('title', 'Home Page')
+
+@section('content')
+
+<section class="container d-flex flex-column vh-100">
+    <div class="row align-items-center justify-content-center g-0 h-lg-100 py-8">
+        <div class="col-lg-5 col-md-8 py-8 py-xl-0">
+            <!-- Card -->
+            <div class="card shadow">
+                <!-- Card body -->
+                <div class="card-body p-6">
+                    <div class="mb-4">
+                        <h1 class="mb-1 fw-bold h2">Sign in</h1>
+                        <span>
+                            Don’t have an account?
+                            <a href="{{ route('register') }}" class="ms-1">Sign up</a>
+                            @if ($errors->any())
+                            <div>
+                                <ul>
+                                    @foreach ($errors->all() as $error)
+                                    <li style="color: #c33;background: #fdecec;">{{ $error }}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                            @endif
+                        </span>
+                    </div>
+                    <!-- Form -->
+                    <form class="needs-validation" method="POST" action="{{ route('login') }}">
+                    @csrf
+                        <!-- Username -->
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Username or email</label>
+                            <input type="email" id="email" name="email" value="{{ old('email') }}" class="form-control" name="email" placeholder="Email address here" required />
+                            <div class="invalid-feedback">Please enter valid username.</div>
+                        </div>
+                        <!-- Password -->
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" id="password" class="form-control" name="password" placeholder="**************" required="" />
+                            <div class="invalid-feedback">Please enter valid password.</div>
+                        </div>
+                        <!-- Checkbox -->
+                        
+                        <div>
+                            <!-- Button -->
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary">Sign in</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@endsection
