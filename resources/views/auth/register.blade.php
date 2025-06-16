@@ -4,7 +4,7 @@
 
 @section('content')
 
-<section class="container d-flex flex-column vh-100">
+<section class="container d-flex flex-column">
     <div class="row align-items-center justify-content-center g-0 h-lg-100 py-8">
         <div class="col-lg-5 col-md-8 py-8 py-xl-0">
             <div class="card shadow">
@@ -50,10 +50,17 @@
                                 <div class="text-danger">{{ $message }}</div>
                             @enderror
                         </div>
+                        
                         <div class="mb-3">
                             <label for="password" class="form-label">Confirm Password</label>
                             <input type="password" id="password_confirmation" name="password_confirmation" class="form-control" placeholder="**************" required="" />
                             <div class="invalid-feedback">Please enter valid password.</div>
+                        </div>
+                        <!-- Phone -->
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone</label>
+                            <input type="tel" id="phone" pattern="^\+?[1-9]\d{1,14}$" name="phone" value="{{ old('phone') }}" class="form-control" placeholder="Phone number here" required="" />
+                            <div class="invalid-feedback">Please enter valid Phone Number.</div>
                         </div>
                         <!-- Checkbox -->
                         <div class="mb-3">
