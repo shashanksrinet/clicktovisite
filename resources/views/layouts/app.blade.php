@@ -33,7 +33,8 @@
 
     <!-- Theme CSS -->
     <link rel="stylesheet" href="{{ asset('css/theme.min.css') }}">
-
+    <!-- Custom CSS -->
+     <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
 
 </head>
 <style>

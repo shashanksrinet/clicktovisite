@@ -1,0 +1,20 @@
+.btn-primary {
+  --bs-primary: #285fa3; /* Replace with your desired color */
+  --bs-btn-bg: #285fa3;
+  --bs-btn-border-color: #285fa3;
+  --bs-btn-hover-bg: #285fa3;
+  --bs-btn-hover-border-color: #285fa3;
+}
+.nav-pills-gray-rounded .nav-item .nav-link.active, .nav-pills-gray-rounded .nav-item .nav-link:hover {
+  background-color: #285fa3;
+}
+.text-primary {
+  color: #285fa3 !important;
+}
+.bg-primary {
+  background-color: #285fa3 !important;
+}
+.text-icon-color {
+  --bs-text-opacity: 1;
+  color: #f05323 !important
+}

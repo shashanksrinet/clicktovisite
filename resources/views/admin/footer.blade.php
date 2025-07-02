@@ -4,5 +4,5 @@
       <!-- clicktovisite -->
     </div>
     <!-- Default to the left -->
-    <strong>Copyright &copy; 2024 <a href="#">Clicktovisite.com</a>.</strong> All rights reserved.
+    <strong>Copyright &copy; {{ date('Y') }} <a href="#">Clicktovisite.com</a>.</strong> All rights reserved.
   </footer>

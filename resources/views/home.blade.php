@@ -68,7 +68,7 @@
             <div class="row">
                 <div class="col-md-6 col-lg-6 col-12">
                     <div class="mb-7">
-                        <div class=" text-primary bg-primary bg-opacity-10 icon-shape  icon-lg rounded-circle">
+                        <div class="text-icon-color bg-primary bg-opacity-10 icon-shape  icon-lg rounded-circle">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                                 class="bi bi-credit-card-2-front" viewBox="0 0 16 16">
                                 <path
@@ -85,7 +85,7 @@
                 </div>
                 <div class="col-md-6 col-lg-6 col-12">
                     <div class="mb-7">
-                        <div class="text-primary bg-primary bg-opacity-10 icon-shape  icon-lg rounded-circle">
+                        <div class="text-icon-color bg-primary bg-opacity-10 icon-shape  icon-lg rounded-circle">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                                 class="bi bi-headset" viewBox="0 0 16 16">
                                 <path
@@ -98,7 +98,7 @@
                 </div>
                 <div class="col-md-6 col-lg-6 col-12">
                     <div class="mb-7 mb-lg-0">
-                        <div class="text-primary bg-primary bg-opacity-10 icon-shape  icon-lg rounded-circle">
+                        <div class="text-icon-color bg-primary bg-opacity-10 icon-shape  icon-lg rounded-circle">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                                 class="bi bi-hand-thumbs-up" viewBox="0 0 16 16">
                                 <path
@@ -111,7 +111,7 @@
                 </div>
                 <div class="col-md-6 col-lg-6 col-12">
                     <div class="mb-7 mb-lg-0">
-                        <div class="text-primary bg-primary bg-opacity-10 icon-shape  icon-lg rounded-circle">
+                        <div class="text-icon-color bg-primary bg-opacity-10 icon-shape  icon-lg rounded-circle">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                                 class="bi bi-bullseye" viewBox="0 0 16 16">
                                 <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
@@ -256,7 +256,7 @@
                                     <div class="row mb-3 align-items-center">
                                         <div class="col-lg-1 col-2 col-md-2">
                                             <div
-                                                class=" text-primary bg-primary bg-opacity-10 icon-shape  icon-md rounded-2">
+                                                class=" text-icon-color bg-primary bg-opacity-10 icon-shape  icon-md rounded-2">
                                                 1
                                             </div>
                                         </div>
@@ -267,7 +267,7 @@
                                     <div class="row  mb-3">
                                         <div class="col-lg-1 col-2 col-md-2 ">
                                             <div
-                                                class="text-primary bg-primary bg-opacity-10 icon-shape  icon-md rounded-2">
+                                                class="text-icon-color bg-primary bg-opacity-10 icon-shape  icon-md rounded-2">
                                                 2
                                             </div>
                                         </div>
@@ -277,7 +277,7 @@
                                     <div class="row mb-3">
                                         <div class="col-lg-1 col-2 col-md-2">
                                             <div
-                                                class="text-primary bg-primary bg-opacity-10 icon-shape  icon-md rounded-2">
+                                                class="text-icon-color bg-primary bg-opacity-10 icon-shape  icon-md rounded-2">
                                                 3
                                             </div>
                                         </div>
@@ -319,7 +319,7 @@
                                         <div class="col-lg-6 col-6">
                                             <div class="mb-5">
                                                 <div
-                                                    class="mb-3 text-primary bg-primary bg-opacity-10 icon-shape  icon-md rounded-3">
+                                                    class="mb-3 text-icon-color bg-primary bg-opacity-10 icon-shape  icon-md rounded-3">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                         fill="currentColor" class="bi bi-piggy-bank"
                                                         viewBox="0 0 16 16">
@@ -337,7 +337,7 @@
                                         <div class="col-lg-6 col-6">
                                             <div class="mb-5">
                                                 <div
-                                                    class="mb-3 text-primary bg-primary bg-opacity-10 icon-shape  icon-md rounded-3">
+                                                    class="mb-3 text-icon-color bg-primary bg-opacity-10 icon-shape  icon-md rounded-3">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                         fill="currentColor" class="bi bi-people"
                                                         viewBox="0 0 16 16">
@@ -353,7 +353,7 @@
                                         <div class="col-lg-6 col-6">
                                             <div>
                                                 <div
-                                                    class="mb-3 text-primary bg-primary bg-opacity-10 icon-shape  icon-md rounded-3">
+                                                    class="mb-3 text-icon-color bg-primary bg-opacity-10 icon-shape  icon-md rounded-3">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                         fill="currentColor" class="bi bi-percent"
                                                         viewBox="0 0 16 16">
@@ -369,7 +369,7 @@
                                         <div class="col-lg-6 col-6">
                                             <div>
                                                 <div
-                                                    class="mb-3 text-primary bg-primary bg-opacity-10 icon-shape  icon-md rounded-3">
+                                                    class="mb-3 text-icon-color bg-primary bg-opacity-10 icon-shape  icon-md rounded-3">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                         fill="currentColor" class="bi bi-currency-dollar"
                                                         viewBox="0 0 16 16">

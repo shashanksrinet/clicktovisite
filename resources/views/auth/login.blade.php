@@ -29,7 +29,7 @@
                     </div>
                     <!-- Form -->
                     <form class="needs-validation" method="POST" action="{{ route('login') }}">
-                    @csrf
+                        @csrf
                         <!-- Username -->
                         <div class="mb-3">
                             <label for="email" class="form-label">Username or email</label>
@@ -43,7 +43,17 @@
                             <div class="invalid-feedback">Please enter valid password.</div>
                         </div>
                         <!-- Checkbox -->
-                        
+                        <div class="d-lg-flex justify-content-between align-items-center mb-4">
+                            <div class="form-check">
+                                <!-- <input type="checkbox" class="form-check-input" id="rememberme" required="" />
+                                <label class="form-check-label" for="rememberme">Remember me</label>
+                                <div class="invalid-feedback">You must agree before submitting.</div> -->
+                            </div>
+                            <div>
+                                <a href="forget-password.html">Forgot your password?</a>
+                            </div>
+                        </div>
+
                         <div>
                             <!-- Button -->
                             <div class="d-grid">

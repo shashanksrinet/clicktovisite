@@ -69,9 +69,9 @@
                                 <label class="form-check-label" for="agreeCheck">
                                     <span>
                                         I agree to the
-                                        <a href="#">Terms of Service</a>
+                                        <a href="/terms-of-use" target="_blank">Terms of Service</a>
                                         and
-                                        <a href="#">Privacy Policy.</a>
+                                        <a href="/privacy-policy" target="_blank">Privacy Policy.</a>
                                     </span>
                                 </label>
                                 <div class="invalid-feedback">You must agree before submitting.</div>

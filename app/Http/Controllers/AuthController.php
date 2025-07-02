@@ -31,14 +31,18 @@ class AuthController extends Controller
             return redirect()->back()->withErrors($validator)->withInput();
         }
 
-        User::create([
+        $user = User::create([
             'name' => $request->name,
             'email' => $request->email,
             'password' => Hash::make($request->password),
             'phone' => $request->phone,
         ]);
+        // Log the user in
+        Auth::login($user);
 
-        return redirect()->route('login')->with('success', 'Registration successful. Please login.');
+        // Redirect to campaign page
+        return redirect('/campaign');
+        //return redirect()->route('login')->with('success', 'Registration successful. Please login.');
     }
 
     public function showLoginForm()

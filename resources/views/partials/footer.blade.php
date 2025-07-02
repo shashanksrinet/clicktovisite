@@ -165,7 +165,7 @@
 		</div>
 		<div class="row">
 			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-				<p class="fs-6 text-muted">© Copyright 2024 </p>
+				<p class="fs-6 text-muted">© Copyright {{ date('Y') }} </p>
 			</div>
 			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 text-md-end">
 				<p class="fs-6 text-muted">

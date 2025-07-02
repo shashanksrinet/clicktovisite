@@ -14,7 +14,7 @@
     }
 
     .faq-header h2 {
-        color: #624bff;
+        color: #285fa3;
         font-size: 2.5rem;
         font-weight: bold;
     }
@@ -32,7 +32,7 @@
     }
 
     .faq-item-header {
-        background-color: #624bff;
+        background-color: #285fa3;
         color: #fff;
         padding: 15px;
         cursor: pointer;
