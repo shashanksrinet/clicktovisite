@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
+use Illuminate\Http\Request;
+use App\Models\User;
 
 class HomeController extends Controller
 {
@@ -49,5 +51,19 @@ class HomeController extends Controller
         return view('pricingplan');
     }
 
-    
+    public function userList(Request $request)
+    {
+        $search = $request->input('search');
+
+        $query = User::query();
+
+        if ($search) {
+            $query->where('name', 'like', "%{$search}%")
+                ->orWhere('email', 'like', "%{$search}%");
+        }
+
+        $users = $query->paginate(10); // 10 per page
+
+        return view('userlist', compact('users', 'search'));
+    }
 }

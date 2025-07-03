@@ -68,6 +68,7 @@ Route::get('privacy-policy', [HomeController::class, 'privacyPolicy'])->name('pr
 Route::get('terms-of-use', [HomeController::class, 'terms'])->name('terms');
 Route::get('cancellation-refund-policy', [HomeController::class, 'refundPolicy'])->name('refundPolicy');
 Route::get('pricing', [HomeController::class, 'pricingPlan'])->name('pricingPlan');
+Route::get('userlist', [HomeController::class, 'userList'])->name('userList');
 
 //Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
