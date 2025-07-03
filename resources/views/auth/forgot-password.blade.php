@@ -33,14 +33,17 @@
                             <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus />
                             <x-input-error :messages="$errors->get('email')" class="mt-2" />
                         </div>
-
+                        {!! NoCaptcha::display() !!}
+                        @error('g-recaptcha-response')
+                            <span class="text-danger">{{ $message }}</span>
+                        @enderror
                         <div class="d-grid">
                             <x-primary-button>
                                 {{ __('Email Password Reset Link') }}
                             </x-primary-button>
                         </div>
                     </form>
-
+                    {!! NoCaptcha::renderJs() !!}
                 </div>
             </div>
         </div>

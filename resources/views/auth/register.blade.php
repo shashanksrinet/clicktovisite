@@ -62,6 +62,10 @@
                             <input type="tel" id="phone" pattern="^\+?[1-9]\d{1,14}$" name="phone" value="{{ old('phone') }}" class="form-control" placeholder="Phone number here" required="" />
                             <div class="invalid-feedback">Please enter valid Phone Number.</div>
                         </div>
+                        {!! NoCaptcha::display() !!}
+                        @error('g-recaptcha-response')
+                            <span class="text-danger">{{ $message }}</span>
+                        @enderror
                         <!-- Checkbox -->
                         <div class="mb-3">
                             <div class="form-check">
@@ -84,6 +88,7 @@
                             </div>
                         </div>
                     </form>
+                    {!! NoCaptcha::renderJs() !!}
                 </div>
             </div>
         </div>

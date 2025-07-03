@@ -42,6 +42,10 @@
                             <input type="password" id="password" class="form-control" name="password" placeholder="**************" required="" />
                             <div class="invalid-feedback">Please enter valid password.</div>
                         </div>
+                        {!! NoCaptcha::display() !!}
+                        @error('g-recaptcha-response')
+                            <span class="text-danger">{{ $message }}</span>
+                        @enderror
                         <!-- Checkbox -->
                         <div class="d-lg-flex justify-content-between align-items-center mb-4">
                             <div class="form-check">
@@ -61,6 +65,7 @@
                             </div>
                         </div>
                     </form>
+                    {!! NoCaptcha::renderJs() !!}
                 </div>
             </div>
         </div>
