@@ -50,7 +50,7 @@
                                 <div class="invalid-feedback">You must agree before submitting.</div> -->
                             </div>
                             <div>
-                                <a href="forget-password.html">Forgot your password?</a>
+                                <a href="{{ route('password.request') }}">Forgot your password?</a>
                             </div>
                         </div>
 

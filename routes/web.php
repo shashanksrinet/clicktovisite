@@ -27,6 +27,8 @@ use App\Http\Controllers\AboutUsController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\FundController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\Auth\ForgotPasswordController;
+use App\Http\Controllers\Auth\ResetPasswordController;
 
 /*
 |--------------------------------------------------------------------------
@@ -130,5 +132,10 @@ Route::post('/login', [AuthController::class, 'login']);
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 #Route::post('/submit-popup-form', [PopupController::class, 'submitForm'])->name('submit.popup.form');
 
+Route::get('forgot-password', [ForgotPasswordController::class, 'showLinkRequestForm'])->name('password.request');
+Route::post('forgot-password', [ForgotPasswordController::class, 'sendResetLinkEmail'])->name('password.email');
+
+Route::get('reset-password/{token}', [ResetPasswordController::class, 'showResetForm'])->name('password.reset');
+Route::post('reset-password', [ResetPasswordController::class, 'reset'])->name('password.update');
 
 #Route::get('{category}/{url_link}', [HomeController::class, 'offershowByUrl'])->name('offershowByUrl');
