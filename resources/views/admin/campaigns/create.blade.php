@@ -193,15 +193,15 @@
         switch (radio.value) {
             case 'clicks':
                 limitText.innerText = 'Daily click limit:';
-                limitTextRate.innerText = 'Cost per click: ₹0.005';
+                limitTextRate.innerText = 'Cost per click: ₹0.10';
                 break;
             case 'visite':
                 limitText.innerText = 'Daily visite limit:';
-                limitTextRate.innerText = 'Cost per website visite: ₹0.90';
+                limitTextRate.innerText = 'Cost per website visite: ₹0.20';
                 break;
             case 'youtube_views':
                 limitText.innerText = 'Daily Video views limit:';
-                limitTextRate.innerText = 'Cost per video views: ₹1.35';
+                limitTextRate.innerText = 'Cost per video views: ₹0.25';
                 break;
             default:
                 limitText.innerText = 'Daily click/visite/views limit:';

@@ -64,9 +64,9 @@ class CampaignController extends Controller
             ],
             'CampaignSettingsForm' => [
                 'frequency' => 4,
-                'cost' => 0.10,
+                'cost' => 0.36,
                 'country' => [
-                    'IN' => 0.10
+                    'IN' => 0.36
                 ],
                 'cityListType' => 'include',
                 'city' => $city,
@@ -167,9 +167,9 @@ class CampaignController extends Controller
             ],
             'CampaignSettingsForm' => [
                 'frequency' => 4,
-                'cost' => 0.10,
+                'cost' => 0.36,
                 'country' => [
-                    'IN' => 0.10 // Static country data for India
+                    'IN' => 0.36 // Static country data for India
                 ],
                 'cityListType' => 'include',
                 'city' => $city, // Static city ID
@@ -453,11 +453,11 @@ class CampaignController extends Controller
                         /// Calculate wallet deduction based on campaign type
                         $walletDeduction = 0;
                         if ($campaign->campaign_type == 'clicks') {
-                            $walletDeduction = $deductionImpressions * 0.005;  // Rate per click
+                            $walletDeduction = $deductionImpressions * 0.10;  // Rate per click
                         } elseif ($campaign->campaign_type == 'visite') {
-                            $walletDeduction = $deductionImpressions * 0.90;  // Rate per visit
+                            $walletDeduction = $deductionImpressions * 0.20;  // Rate per visit
                         } elseif ($campaign->campaign_type == 'youtube_views') {
-                            $walletDeduction = $deductionImpressions * 1.35;  // Rate per YouTube view
+                            $walletDeduction = $deductionImpressions * 0.25;  // Rate per YouTube view
                         }
                         // Deduct from user's wallet
                         if ($walletDeduction > 0) {

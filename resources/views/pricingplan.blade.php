@@ -52,9 +52,9 @@
                 <div class="col-md-4">
                     <div class="pricing-card">
                         <div class="pricing-header">Click Campaign</div>
-                        <div class="pricing-price">₹0.005/Click</div>
+                        <div class="pricing-price">₹0.10/Click</div>
                         <ul class="pricing-features">
-                            <li>Worldwide GEOs</li>
+                            <li>City-Wise Targeting Across India</li>
                             <li>6B+ Impressions Daily</li>
                             <li>Email Support</li>
                         </ul>
@@ -68,10 +68,10 @@
                 <div class="col-md-4">
                     <div class="pricing-card">
                         <div class="pricing-header">Website Traffic</div>
-                        <div class="pricing-price">₹0.90/Visite</div>
+                        <div class="pricing-price">₹0.20/Visite</div>
                         <ul class="pricing-features">
-                            <li>60% bounce rate</li>
-                            <li>2 minute avg session</li>
+                            <li>60-80% bounce rate</li>
+                            <li>2-5 minute avg session</li>
                             <li>Priority Email Support</li>
                         </ul>
                         <div class="pricing-button">
@@ -84,9 +84,9 @@
                 <div class="col-md-4">
                     <div class="pricing-card">
                         <div class="pricing-header">Video Promotion</div>
-                        <div class="pricing-price">₹1.35/Views</div>
+                        <div class="pricing-price">₹0.25/Views</div>
                         <ul class="pricing-features">
-                            <li>70% video completions</li>
+                            <li>60-70% video completions</li>
                             <li>Self Serve Plateform</li>
                             <li>24/7 Support</li>
                         </ul>
