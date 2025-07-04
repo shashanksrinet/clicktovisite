@@ -62,7 +62,7 @@ class HomeController extends Controller
                 ->orWhere('email', 'like', "%{$search}%");
         }
 
-        $users = $query->paginate(10); // 10 per page
+        $users = $query->paginate(15); // 10 per page
 
         return view('userlist', compact('users', 'search'));
     }
