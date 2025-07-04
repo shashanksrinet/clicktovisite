@@ -390,7 +390,6 @@ class CampaignController extends Controller
         $url = 'https://evadavapi.com/api/v2.2/advertiser/stats/date';
 
         $campaigns = Campaign::withTrashed()->get();  // Get all campaigns, including soft-deleted ones
-
         foreach ($campaigns as $campaign) {
             $response = Http::withHeaders([
                 'accept' => 'application/json',
@@ -413,7 +412,7 @@ class CampaignController extends Controller
             try {
                 $data = $response->json();
                 //dd($data);
-                if (isset($data['data']['stat'])) {
+                if (isset($data['data']['stat']) && !empty($data['data']['stat'])) {
                     $stat = reset($data['data']['stat']);
                     // Retrieve existing campaign statistic for today
                     $existingStatistic = CampaignStatistic::where('campaign_id', $campaign->api_id)
